@@ -389,3 +389,9 @@ const adventureBooks = books
   .map((book) => book.title);
 
 console.log(adventureBooks); //[ 'The Lord of the Rings', 'Dune', 'Harry Potter and the Philosopher\'s Stone' ]
+
+//===================================27. the array filter method  ====================================================
+
+const pagesAllBooks = books.reduce((acc, book) => acc + book.pages, 0); // boild down the entire array to one number
+
+console.log(pagesAllBooks); // 3227

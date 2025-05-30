@@ -1,0 +1,11 @@
+in react-rource repo
+    move to js review 
+    continue coding in starter directory
+
+is simply to combine all the array elements into 1 element 
+
+const pagesAllBooks = books.reduce((acc, book) => acc + book.pages, 0); // boild down the entire array to one number
+
+console.log(pagesAllBooks); // 3227 = the sum of all books pages 
+
+
