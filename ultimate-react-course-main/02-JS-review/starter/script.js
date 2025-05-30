@@ -244,3 +244,25 @@ summary = `${title}, a ${pages}-page long book, was written by ${author} and pub
 summary;
 
 //===================================23. short circuiting and logical operators  ====================================================
+
+console.log(true && "Some String"); //'Some String'
+console.log(false && "Some String"); //false
+console.log(hasMovieAdaptation && "This book has a movie"); // false
+
+// falsy: 0, '', null, undefined
+
+console.log("mohammad" && "Some string"); // 'Some string'
+console.log(0 && "mohammad" && "Some string"); // 0
+
+console.log(true || "Some String "); // true
+console.log(false || "Some String "); // Some String
+
+console.log(book.translations.spanish); // undefined
+console.log(books[0].translations.spanish); // 'El señor de los anillos'
+
+console.log(book.translations.spanish || "NOT TRANSLATED"); // 'NOT TRANSLATED'
+
+console.log(book.reviews.librarything.reviewsCount || "no data"); // 'no data'
+
+const count = book.reviews.librarything.reviewsCount ?? "no data"; // Nullish coalescing operator (??)
+count; // 0, will return the second value if the first value is (null or undefined)

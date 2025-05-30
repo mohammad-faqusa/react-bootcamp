@@ -1,0 +1,10 @@
+in react-rource repo
+    move to js review 
+    continue coding in starter directory 
+
+short circuiting in logical operators 
+    the operator reutrn the first value, and not looking for the second value 
+
+&& : and ooperator 
+|| : or operator 
+?? : Nullish coalescing operator
