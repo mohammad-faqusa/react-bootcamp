@@ -1,0 +1,37 @@
+the two options for setting up react project : 
+    create-react-app
+        starter kit
+        every things is already configured : ESLins, Prettier, Jest etc.
+
+        but slow and oudated 
+
+        so don't use it for real world application, 
+        but still useful for course, tutorials, and anything with small projects  
+
+    vite 
+        build real world application , as we will do at the end of the course 
+
+        is quite different one 
+
+        use for modern real-world apps 
+
+        but need manually setupt ESLint (and otherss) 
+
+        why even use Vite, in first place : 
+            exteremly fast automatically refresh page (hot module replacement)
+            bundling is extermely fast 
+
+            it updates when code is changed 
+
+
+what about react frameworkd ? 
+    next js 
+    remix 
+
+    containns solutions of routing, data fetching, server side rendering , etc. (things React does not provice easily )
+
+
+    vanilla react apps ? 
+        still have very important place too, even without using frameworks 
+
+✌ don't worry about recommendation for now ! 
