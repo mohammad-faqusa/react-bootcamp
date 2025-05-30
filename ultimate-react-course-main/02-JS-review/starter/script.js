@@ -315,24 +315,77 @@ const essentialData = books.map((book) => ({
 console.log(essentialData);
 // [
 //   {
+//     title: "The Lord of the Rings",
+//     author: "J. R. R. Tolkien",
+//     reviewsCount: 13869,
+//   },
+//   {
+//     title: "The Cyberiad",
+//     author: "Stanislaw Lem",
+//     reviewsCount: 812,
+//   },
+//   { title: "Dune", author: "Frank Herbert", reviewsCount: NaN },
+//   {
+//     title: "Harry Potter and the Philosopher's Stone",
+//     author: "J. K. Rowling",
+//     reviewsCount: 142585,
+//   },
+//   {
+//     title: "A Game of Thrones",
+//     author: "George R. R. Martin",
+//     reviewsCount: 60153,
+//   },
+// ];
+
+//===================================26. the array filter method  ====================================================
+
+const longBooks = books.filter((book) => book.pages > 800);
+
+console.log(longBooks); //
+// [
+//   {
+//     id: 1,
 //     title: 'The Lord of the Rings',
+//     publicationDate: '1954-07-29',
 //     author: 'J. R. R. Tolkien',
-//     reviewsCount: 13869
+//     genres: Array(6) [
+//       'fantasy', 'high-fantasy', 'adventure', 'fiction', 'novels', 'literature'
+//     ],
+//     hasMovieAdaptation: true,
+//     pages: 1216,
+//     translations: {
+//       spanish: 'El señor de los anillos',
+//       chinese: '魔戒',
+//       french: 'Le Seigneur des anneaux'
+//     },
+//     reviews: {
+//       goodreads: { rating: 4.52, ratingsCount: 630994, reviewsCount: 13417 },
+//       librarything: { rating: 4.53, ratingsCount: 47166, reviewsCount: 452 }
+//     }
 //   },
 //   {
-//     title: 'The Cyberiad',
-//     author: 'Stanislaw Lem',
-//     reviewsCount: 812
-//   },
-//   { title: 'Dune', author: 'Frank Herbert', reviewsCount: NaN },
-//   {
-//     title: 'Harry Potter and the Philosopher\'s Stone',
-//     author: 'J. K. Rowling',
-//     reviewsCount: 142585
-//   },
-//   {
+//     id: 5,
 //     title: 'A Game of Thrones',
+//     publicationDate: '1996-08-01',
 //     author: 'George R. R. Martin',
-//     reviewsCount: 60153
+//     genres: [ 'fantasy', 'high-fantasy', 'novel', 'fantasy fiction' ],
+//     hasMovieAdaptation: true,
+//     pages: 835,
+//     translations: {
+//       korean: '왕좌의 게임',
+//       polish: 'Gra o tron',
+//       portuguese: 'A Guerra dos Tronos',
+//       spanish: 'Juego de tronos'
+//     },
+//     reviews: {
+//       goodreads: { rating: 4.44, ratingsCount: 2295233, reviewsCount: 59058 },
+//       librarything: { rating: 4.36, ratingsCount: 38358, reviewsCount: 1095 }
+//     }
 //   }
 // ]
+
+const adventureBooks = books
+  .filter((book) => book.genres.includes("adventure"))
+  .map((book) => book.title);
+
+console.log(adventureBooks); //[ 'The Lord of the Rings', 'Dune', 'Harry Potter and the Philosopher\'s Stone' ]

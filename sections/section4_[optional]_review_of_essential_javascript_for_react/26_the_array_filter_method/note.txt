@@ -1,0 +1,11 @@
+in react-rource repo
+    move to js review 
+    continue coding in starter directory
+
+const longBooks = books.filter((book) => book.pages > 800);
+
+
+const adventureBooks = books
+  .filter((book) => book.genres.includes("adventure"))
+  .map((book) => book.title);
+

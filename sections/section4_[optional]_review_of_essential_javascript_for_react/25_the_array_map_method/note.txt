@@ -2,3 +2,11 @@ in react-rource repo
     move to js review 
     continue coding in starter directory , and comment all the previous practice 
 
+const titles = books.map((book) => book.title);
+
+
+const essentialData = books.map((book) => ({
+  title: book.title,
+  author: book.author,
+  reviewsCount: getTotalReviewCount(book),
+}));
