@@ -297,10 +297,10 @@ console.log(getTotalReviewCount(books[2])); // NaN
 
 const books = getBooks();
 
-const x = [1, 2, 3, 4, 5].map((el) => el * 2);
+const y = [1, 2, 3, 4, 5].map((el) => el * 2);
 //each element in the array is duplicated by 2
 
-console.log(x); // [ 2, 4, 6, 8, 10 ]
+console.log(y); // [ 2, 4, 6, 8, 10 ]
 
 const titles = books.map((book) => book.title);
 
@@ -395,3 +395,27 @@ console.log(adventureBooks); //[ 'The Lord of the Rings', 'Dune', 'Harry Potter 
 const pagesAllBooks = books.reduce((acc, book) => acc + book.pages, 0); // boild down the entire array to one number
 
 console.log(pagesAllBooks); // 3227
+
+//===================================28. the array sort method  ====================================================
+
+let x = [3, 7, 1, 9, 6];
+
+const sorted = x.sort((a, b) => a - b); // ascending
+console.log(sorted); // [ 1, 3, 6, 7, 9 ]
+console.log(x); // [ 1, 3, 6, 7, 9 ]
+
+const reversed = x.sort((a, b) => b - a); // disascending
+console.log(reversed); // [ 9, 7, 6, 3, 1 ]
+console.log(x); // [ 9, 7, 6, 3, 1 ]
+
+// we don't want to mutating the data , so we use slice
+
+x = [3, 7, 1, 9, 6];
+
+const sortedCopy = x.slice().sort((a, b) => a - b); // ascending
+console.log(sortedCopy); // [ 1, 3, 6, 7, 9 ]
+console.log(x); // [ 3, 7, 1, 9, 6 ]
+
+const reveresedCopy = x.slice().sort((a, b) => b - a); // disascending
+console.log(reveresedCopy); // [ 9, 7, 6, 3, 1 ]
+console.log(x); // [ 3, 7, 1, 9, 6 ]

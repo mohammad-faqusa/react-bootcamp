@@ -1,0 +1,12 @@
+in react-rource repo
+    move to js review 
+    continue coding in starter directory
+
+const sorted = x.sort((a, b) => a - b); , a - b : means asscending , place a first if result < 0 , else place b first 
+const sorted = x.sort((a, b) => a - b); , b -a  : means reverese place b first if result < 0 , else place a first
+
+.sort method is mutating the x array, and we don't want to mutate x array 
+
+so we use slice : 
+const sorted = x.slice().sort((a, b) => a - b); , a - b : means asscending , place a first if result < 0 , else place b first 
+const sorted = x.slice().sort((a, b) => a - b); , b -a  : means reverese place b first if result < 0 , else place a first
