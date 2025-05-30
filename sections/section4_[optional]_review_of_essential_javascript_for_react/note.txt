@@ -1,0 +1,16 @@
+
+in react-rource repo
+    move to js review 
+    code in starter directory 
+
+use quokka extention 
+    commande plate 
+    start quokka current file 
+
+we focus on destructing methods 
+    objects directory
+    array 
+
+
+
+    
