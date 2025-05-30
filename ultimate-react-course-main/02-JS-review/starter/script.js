@@ -143,6 +143,15 @@ function getBook(id) {
   return data.find((d) => d.id === id);
 }
 
+function getTotalReviewCount(book) {
+  const goodread = book.reviews?.goodreads?.reviewsCount;
+  // const librarything = book.reviews.librarything.reviewsCount; //Cannot read properties of undefined (reading 'reviewsCount')
+  const librarything = book.reviews?.librarything?.reviewsCount; //NaN
+
+  return goodread + librarything;
+}
+
+/* 
 // destructureing
 
 const books = getBooks();
@@ -174,6 +183,8 @@ title;
 author;
 
 otherVariable;
+
+
 
 //destructuring with arrays
 
@@ -279,3 +290,49 @@ function getTotalReviewCount(book) {
 
 console.log(getTotalReviewCount(books[1])); // 812
 console.log(getTotalReviewCount(books[2])); // NaN
+
+*/
+
+//===================================25. the array map method  ====================================================
+
+const books = getBooks();
+
+const x = [1, 2, 3, 4, 5].map((el) => el * 2);
+//each element in the array is duplicated by 2
+
+console.log(x); // [ 2, 4, 6, 8, 10 ]
+
+const titles = books.map((book) => book.title);
+
+console.log(titles); // ['The Lord of the Rings', 'The Cyberiad', 'Dune', 'Harry Potter and the Philosopher\'s Stone','A Game of Thrones']
+
+const essentialData = books.map((book) => ({
+  title: book.title,
+  author: book.author,
+  reviewsCount: getTotalReviewCount(book),
+}));
+
+console.log(essentialData);
+// [
+//   {
+//     title: 'The Lord of the Rings',
+//     author: 'J. R. R. Tolkien',
+//     reviewsCount: 13869
+//   },
+//   {
+//     title: 'The Cyberiad',
+//     author: 'Stanislaw Lem',
+//     reviewsCount: 812
+//   },
+//   { title: 'Dune', author: 'Frank Herbert', reviewsCount: NaN },
+//   {
+//     title: 'Harry Potter and the Philosopher\'s Stone',
+//     author: 'J. K. Rowling',
+//     reviewsCount: 142585
+//   },
+//   {
+//     title: 'A Game of Thrones',
+//     author: 'George R. R. Martin',
+//     reviewsCount: 60153
+//   }
+// ]

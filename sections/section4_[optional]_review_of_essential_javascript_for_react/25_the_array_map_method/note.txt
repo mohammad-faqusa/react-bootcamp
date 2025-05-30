@@ -1,0 +1,4 @@
+in react-rource repo
+    move to js review 
+    continue coding in starter directory , and comment all the previous practice 
+
