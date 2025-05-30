@@ -1,0 +1,26 @@
+================create the projec==============================
+open the cmd or terminal 
+we want to create react app in workplace folder 
+write this command 
+    npx create-react-app@5 pizza-menu    // the version number is not necessary, but we suppose it for our course
+open the created project in new vs code window 
+
+//
+the developemnt work, is mostly happen in "src" folder 
+
+"public" folder 
+    index.html, the template for application 
+        the "root" id is specified 
+
+in our porject, we aim to build pure react, so is not necessary to locate where index.html of public folder 
+//
+
+
+===============run the project==========================
+
+in project directory run this command : "npm start" 
+
+by default it runs on localhost:3000
+
+
+
