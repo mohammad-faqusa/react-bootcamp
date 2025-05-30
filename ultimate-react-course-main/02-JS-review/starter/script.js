@@ -419,3 +419,26 @@ console.log(x); // [ 3, 7, 1, 9, 6 ]
 const reveresedCopy = x.slice().sort((a, b) => b - a); // disascending
 console.log(reveresedCopy); // [ 9, 7, 6, 3, 1 ]
 console.log(x); // [ 3, 7, 1, 9, 6 ]
+
+//===================================29. working with immutable arrays  ====================================================
+
+const newBook = {
+  id: 6,
+  title: "Harry Potter and the Chamber of Secrets",
+  author: "J. K. Rowling",
+};
+
+// 1) adding element to the array
+const booksAfterAdd = [...books, newBook];
+
+console.log(booksAfterAdd); //
+
+// 2) Delete a book object from array
+const booksAfterDelete = booksAfterAdd.filter((book) => book.id !== 3);
+
+// 3) Update book object in the array
+const booksAfterUpdate = booksAfterDelete.map((book) =>
+  book.id === 1 ? { ...book, pages: 1210 } : book
+);
+
+console.log(booksAfterUpdate); //
