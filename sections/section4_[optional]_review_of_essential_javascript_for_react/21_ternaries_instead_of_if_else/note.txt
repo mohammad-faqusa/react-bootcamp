@@ -1,0 +1,16 @@
+in react-rource repo
+    move to js review 
+    continue coding in starter directory 
+
+const pagesRange = pages > 1000 ? "over a thousand" : "less than 1000";
+pagesRange; equal to 'less than 1000'
+
+
+console.log(`The book has ${pagesRange} pages`); //'The book has less than 1000 pages'
+
+
+const summary = `${title}, a ${pages}-page long book, was written by ${author} and published in ${
+  publicationDate.split("-")[0]
+}, the book has ${
+  hasMovieAdaptation ? "adapted as a movie" : "has not adapted as move"
+}`; // 'The Cyberiad, a 295-page long book, was written by Stanislaw Lem and published in 1965, the book has has not adapted as move'

@@ -204,5 +204,14 @@ const updatedBooke = {
 
 updatedBooke;
 
-const summary = `${title}, a ${pages}-page long book, was written by ${author} and published in ${publicationDate}`;
-summary;
+const summary = `${title}, a ${pages}-page long book, was written by ${author} and published in ${
+  publicationDate.split("-")[0]
+}, the book has ${
+  hasMovieAdaptation ? "adapted as a movie" : "has not adapted as move"
+}`;
+summary; // 'The Cyberiad, a 295-page long book, was written by Stanislaw Lem and published in 1965, the book has has not adapted as move'
+
+const pagesRange = pages > 1000 ? "over a thousand" : "less than 1000";
+pagesRange;
+
+console.log(`The book has ${pagesRange} pages`); //'The book has less than 1000 pages'
