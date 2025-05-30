@@ -204,14 +204,43 @@ const updatedBooke = {
 
 updatedBooke;
 
-const summary = `${title}, a ${pages}-page long book, was written by ${author} and published in ${
+// =============================== 20 template literals =====================================
+let summary = `${title}, a ${pages}-page long book, was written by ${author} and published in ${
   publicationDate.split("-")[0]
 }, the book has ${
   hasMovieAdaptation ? "adapted as a movie" : "has not adapted as move"
 }`;
 summary; // 'The Cyberiad, a 295-page long book, was written by Stanislaw Lem and published in 1965, the book has has not adapted as move'
 
+// =============================== 21 ternary operator  =====================================
+
 const pagesRange = pages > 1000 ? "over a thousand" : "less than 1000";
 pagesRange;
 
 console.log(`The book has ${pagesRange} pages`); //'The book has less than 1000 pages'
+
+//===================================22. arrow functions ====================================================
+
+// the traditional way, which we use all time for longer functions :
+// function getyear(str) {
+//   // this is function declaration
+//   return str.split("-")[0];
+// }
+
+const getYear = (str) => str.split("-")[0]; // this is function expression
+
+// const getYear2 = (str) => {
+//   return str.split("-")[0]; // same to previous
+// }; // this is function expression
+
+// cosnt getYear = (str, a , b) => str.split("-")[0]; // you can place any number of parameter s
+
+summary = `${title}, a ${pages}-page long book, was written by ${author} and published in ${getYear(
+  publicationDate
+)}, the book has ${
+  hasMovieAdaptation ? "adapted as a movie" : "has not adapted as move"
+}`;
+
+summary;
+
+//===================================23. short circuiting and logical operators  ====================================================

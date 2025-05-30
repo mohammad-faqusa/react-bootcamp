@@ -1,0 +1,8 @@
+in react-rource repo
+    move to js review 
+    continue coding in starter directory 
+
+you can use it all time, but it is not recommended 
+
+just use it in one line functions 
+
