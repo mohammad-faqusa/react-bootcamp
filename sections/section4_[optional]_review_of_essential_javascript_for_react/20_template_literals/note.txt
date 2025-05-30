@@ -1,0 +1,14 @@
+in react-rource repo
+    move to js review 
+    continue coding in starter directory 
+
+usually strings are devicd by : 
+    double quotes : ""
+    single quite : '' 
+
+but template literal is defined by : `` 
+
+
+const summary = `${title}, a ${pages}-page long book, was written by ${author} and published in ${publicationDate}`;
+summary equal to  'The Cyberiad, a 295-page long book, was written by Stanislaw Lem and published in 1965-01-01'
+

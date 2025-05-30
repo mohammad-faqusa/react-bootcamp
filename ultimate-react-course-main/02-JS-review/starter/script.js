@@ -177,7 +177,7 @@ otherVariable;
 
 //destructuring with arrays
 
-console.log(author, title, genres);
+console.log(author, title, genres, publicationDate);
 
 // const primaryGenre = genres[0];
 // const seconderyGenre = genres[1];
@@ -203,3 +203,6 @@ const updatedBooke = {
 };
 
 updatedBooke;
+
+const summary = `${title}, a ${pages}-page long book, was written by ${author} and published in ${publicationDate}`;
+summary;
