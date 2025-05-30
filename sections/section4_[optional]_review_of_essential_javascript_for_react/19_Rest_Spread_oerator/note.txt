@@ -1,0 +1,34 @@
+
+in react-rource repo
+    move to js review 
+    continue coding in starter directory 
+
+this is rest operator : 
+    const [primaryGenre, seconderyGenre, ...otherGenres] = genres;
+
+the "..." is also used for spread operator (both in arrays and objects) 
+    const newGenres = [...genres, "epic fantasy"]; // take all the values of genres, and place it one by one to make newGenres 1 level of elements (no nasted arrays )
+
+    instead of this  const newGenres = [genres, "epic fantasy"];: 
+        [
+            [
+                'science fiction', 'humor', 'speculative fiction', 'short stories', 'fantasy'
+            ],
+            'epic fantasy'
+        ]
+
+    it should be like this : const newGenres = [...genres, "epic fantasy"];
+        Array(6) [
+        'science fiction', 'humor', 'speculative fiction', 'short stories', 'fantasy',
+        'epic fantasy'
+        ]
+
+=======================spread operator for objects==================
+
+const updatedBooke = {
+  ...book,
+  moviePublicationDate: "2001-10-10",
+  pages: 1200,
+};
+
+the second and  third elments   are added or updated to first element (object book)

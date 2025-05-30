@@ -182,8 +182,24 @@ console.log(author, title, genres);
 // const primaryGenre = genres[0];
 // const seconderyGenre = genres[1];
 
-const [primaryGenre, seconderyGenre] = genres;
+const [primaryGenre, seconderyGenre, ...otherGenres] = genres;
 // first element primaryGenre for index 0 of array
-// second element  seconderyGenre for index 1 of array
+// second element  seconderyGenre kfor index 1 of array
 
-console.log(primaryGenre, seconderyGenre);
+console.log(primaryGenre, seconderyGenre, otherGenres);
+
+const newGenres = [...genres, "epic fantasy"];
+
+newGenres;
+
+//======================spread operator for objects=======================
+
+book;
+
+const updatedBooke = {
+  ...book,
+  moviePublicationDate: "2001-10-10",
+  pages: 1200,
+};
+
+updatedBooke;
