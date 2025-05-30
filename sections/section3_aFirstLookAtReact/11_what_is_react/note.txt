@@ -1,0 +1,32 @@
+
+javascript library for building UI 
+
+extermely popular
+    react is extermely popular 
+
+declarative
+    we describe how compoent looks like 
+    by using JSX 
+    React is abstraction away form DOM 
+    JSX : a syntax that combines html,css,js as well as referencing other components 
+
+component bases
+    are the building blocks of UI 
+    take compoennts -> drop them on the page 
+    for example airbnb
+        nav bar component, map, menu, ... all droped on the page 
+
+state driven 
+    always keep the UI in sync with data, is called state in react
+    react reacts to state changes, by rendering if the state is changed 
+
+library:
+    react is onnly the "view" layer 
+    there are multiple frameworks built on react : 
+        Next.js, Remix 
+
+created by facebook: 
+    created in 2011
+    open sources in 2013
+
+    

@@ -1,0 +1,20 @@
+following the link in sadbox to see the difference : 
+https://codesandbox.io/p/sandbox/react-first-app-advice-52879f?file=%2Fsrc%2FApp.js%3A1%2C1-34%2C1
+
+
+
+differences :
+    in react, every thing is written in js 
+    while in vanilla js, html still in charge 
+
+
+    in vanilla js, manual select the dom elements 
+    while react, there is no manual declaration and class to elements 
+
+    event listener : 
+        defing seperate function in vanilla js 
+        while in react is simpler, just add on the same line "onClick={}" 
+
+    in vanilla js, we need to define global variables to make UI in sync with declaration 
+    while in react, we define in easier way (state) 
+

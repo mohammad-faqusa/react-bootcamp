@@ -1,0 +1,23 @@
+this course is for every one 
+
+learn from zero react skills 
+
+if first sectiosn of course, don't worry about why and how 
+    we just worry about if it works 
+
+if you have some quesitons 
+    search q&a
+
+    if you didn't find it : 
+    start quesiton it by your self in q&a and answer your self 
+
+
+before moving on from a section: 
+    make sure that you understand exactly
+    take a break
+    review the code we wrote 
+    review your notes
+    review the projects we build 
+    and maybe even write small code from your self 
+
+and finally and most importantly : ====> have fun ! 

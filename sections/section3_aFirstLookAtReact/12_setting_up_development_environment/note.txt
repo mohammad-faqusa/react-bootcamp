@@ -1,0 +1,33 @@
+recomended to use chrom borwser
+
+node js , at least version 18.14 
+
+vscode extensions 
+    eslint
+    prettier 
+    onemonokai // color theme 
+    material icon theme 
+
+
+settings 
+    sreach for "auto save" 
+    Auto Save : on focus changed 
+
+    pretitier extension: 
+        search for : default fomat 
+        Defualt Formatter : Prettier - Code formatter 
+    
+    search for format on save, 
+        set marked 
+    
+    esline 
+        Eslint: Run (onSave )
+
+setup snippets 
+
+    with these snippets we will use frequently 
+    open the snippets.json
+    copy the entire Code
+    mvoe to settings
+    click on snippets
+    type new snippets file 

@@ -1,0 +1,5 @@
+react documentation : https://react.dev/?ref=jonas.io
+create react app : https://create-react-app.dev/?ref=jonas.io
+vite getting started : https://vite.dev/guide/?ref=jonas.io
+
+

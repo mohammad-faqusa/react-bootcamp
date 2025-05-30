@@ -1,0 +1,12 @@
+why react ? 
+
+
+what is react ? 
+
+
+react vs vanilla js 
+
+
+setting up new React apps 
+
+

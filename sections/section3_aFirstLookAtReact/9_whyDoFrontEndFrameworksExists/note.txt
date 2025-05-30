@@ -1,0 +1,37 @@
+
+
+why do front-end frameworks exists ? 
+
+
+before around 2010: 
+    the server side rendering 
+    so the pages based on data and templates from server
+
+
+how ever developers stated writing more and more js code , until at some point ...
+    these bacame fully fleshed applications :
+        which tell us to move to single page application: 
+        rendering the web page on clinet side 
+        
+        so we don't need to call it web pages , but web applications 
+
+        
+  
+you can cick buttons, submit, whitout page reloading ! 
+
+
+comparason building with vanilla js, react
+    task of single page app : 
+    to keep the UI is sync with the data
+    it is really hard problem to solve with vanilla js 
+
+    for example if we update time/date, it should be updated for each component in page, and this is dounting process for vanilla js 
+
+    
+
+problem with vanilla : 
+    dom manipulation and traversing, however state is usuallly soted in the DOM, shared accross entire app 
+
+to summarize : 
+    keeping UI sync with data is hard, so front end frameworks takes this hardword away from developers 
+    enforce a correct way in writing and strcturing the code (a lot less than spegity code)
