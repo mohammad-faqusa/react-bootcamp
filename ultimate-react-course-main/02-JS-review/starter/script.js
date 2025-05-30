@@ -266,3 +266,16 @@ console.log(book.reviews.librarything.reviewsCount || "no data"); // 'no data'
 
 const count = book.reviews.librarything.reviewsCount ?? "no data"; // Nullish coalescing operator (??)
 count; // 0, will return the second value if the first value is (null or undefined)
+
+//===================================24. Optoinal Chaining  ====================================================
+
+function getTotalReviewCount(book) {
+  const goodread = book.reviews.goodreads.reviewsCount;
+  // const librarything = book.reviews.librarything.reviewsCount; //Cannot read properties of undefined (reading 'reviewsCount')
+  const librarything = book.reviews.librarything?.reviewsCount; //NaN
+
+  return goodread + librarything;
+}
+
+console.log(getTotalReviewCount(books[1])); // 812
+console.log(getTotalReviewCount(books[2])); // NaN

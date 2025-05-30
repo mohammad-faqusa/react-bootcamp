@@ -1,0 +1,16 @@
+in react-rource repo
+    move to js review 
+    continue coding in starter directory 
+
+as you can see this undefined error : 
+
+function getTotalReviewCount(book) {
+  const goodread = book.reviews.goodreads.reviewsCount;
+  const librarything = book.reviews.librarything.reviewsCount; //Cannot read properties of undefined (reading 'reviewsCount')
+    const librarything = book.reviews?.librarything?.reviewsCount; //NaN --optional chaining is used---
+  return goodread + librarything;
+}
+
+console.log(getTotalReviewCount(books[2])); // NaN, if '?' is used 
+//without optional chaining '?'  :  Cannot read properties of undefined (reading 'reviewsCount')
+
