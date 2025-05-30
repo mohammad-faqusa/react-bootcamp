@@ -1,0 +1,30 @@
+
+
+in course repo , at 01 file starter 
+    we include the react by script to html file
+
+go to react.dev
+    learn
+    installation 
+    mvoe to 'try react locally' 
+    to download this html page from this link : https://gist.githubusercontent.com/gaearon/0275b1e1518599bbeafcde4722e79ed1/raw/db72dcbf3384ee1708c4a07d3be79860db04bff0/example.html
+
+    copy and pase the two scripts on head 
+
+in html file after copied the two scripts 
+
+create the header element using React.createElement("header")
+
+write the function app 
+
+    
+    useState time 
+
+    React.useEffect(()=>
+        setInterval for time
+    )
+
+    return React.createElement("header", null, `Hello React! ${time}`); // param 0 : the element type, param 1: props, param 2: the child element
+
+
+

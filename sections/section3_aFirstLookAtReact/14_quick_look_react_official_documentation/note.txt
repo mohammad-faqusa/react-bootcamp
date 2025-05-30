@@ -1,0 +1,16 @@
+go to react.dev
+
+learn part 
+    getting started
+    installation 
+
+
+reference part 
+    for example : useLayoutEffect
+
+
+few pages might be helpful 
+    escape hatches 
+
+
+keep always opening the docoumentaiton, that's the way of professional develoepers 
