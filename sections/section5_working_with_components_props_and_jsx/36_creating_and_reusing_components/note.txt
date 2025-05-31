@@ -1,0 +1,41 @@
+include the starter files from course repo : 
+    pizza images 
+    data.JS
+    index.css
+
+to workpalce pizza project
+
+
+we can use pizza compoent inside app compoent like this : 
+function App() {
+  return (
+    <div>
+      <h1>Hello React!</h1>
+      <p>JS</p>
+      <Pizza />
+    </div>
+  );
+}
+
+function Pizza() {
+  return <h2>Pizza</h2>;
+}
+
+or nesting the functions :  ,, but this is very bad idea 
+
+function App() {
+    
+function Pizza() {
+  return <h2>Pizza</h2>;
+}
+
+  return (
+    <div>
+      <h1>Hello React!</h1>
+      <p>JS</p>
+      <Pizza />
+    </div>
+  );
+}
+
+

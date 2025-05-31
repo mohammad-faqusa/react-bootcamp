@@ -1,15 +1,27 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import pizzaData from "./data";
 
 function App() {
-  const x = "mohammad"; // warning: the variable is declared but is not used yet !
   return (
     <div>
       <h1>Hello React!</h1>
       <p>JS</p>
+      <Pizza />
+      <Pizza />
+      <Pizza />
     </div>
   );
-} // error , the returned value must be wrapped
+}
+
+function Pizza() {
+  return (
+    <div>
+      <img src={pizzaData[0].photoName} />
+      <p>{pizzaData[0].name}</p>
+    </div>
+  );
+}
 
 const rootElement = document.getElementById("root");
 
