@@ -1,0 +1,35 @@
+what is jsx ? why is such a big deal in react ? 
+
+compoent contains : 
+    data
+    logic 
+    apperence 
+
+jsx need to describe what component needs to look like , based on the data and logic (for compoent appearence)
+ro render the component on UI 
+
+JSX is extension of javascript, to combine html,css,javascript into 1 line code 
+
+how react understand html code, 
+    jsx convert the html to js codde (babel conversion)
+
+so without jsx  
+    we need to create html elements manuaglly uisng js 
+        React.createElement('header) ... 
+    and thats needs a lot of time and effort 
+
+jsx is declarative : 
+    imperative ? 
+        when building ui using native js 
+        manual select elements
+        confguring using dom 
+        until reach the desired approach 
+    
+    declarative : 
+        describe the ui should like all times , based on curren data inside the component 
+        based on props and states 
+        all of that happnen without dom operations 
+        is a huge abstraction away from the dom
+
+    in declarative approach : use react (jsx) 
+    in imeprative : using native js 
