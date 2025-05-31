@@ -447,9 +447,9 @@ console.log(booksAfterUpdate); //
 
 //===================================30. asynchronous JavaScript: Promises  ====================================================
 
-fetch("https://jsonplaceholder.typicode.com/todos/1")
-  .then((response) => response.json())
-  .then((json) => console.log(json));
+// fetch("https://jsonplaceholder.typicode.com/todos/1")
+//   .then((response) => response.json())
+//   .then((json) => console.log(json));
 
 console.log("mohammad"); //
 
@@ -460,3 +460,24 @@ console.log("mohammad"); //
 // id: 1,
 // title: 'delectus aut autem',
 // completed: false }
+
+async function getTodos() {
+  // const res = await fetch("https://jsonplaceholder.typicode.com/todos/1");
+  // console.log(res);
+  // const data = await res.json();
+  // console.log(data);
+
+  //also you can do it like this
+  const data = await fetch("https://jsonplaceholder.typicode.com/todos/1").then(
+    (res) => res.json()
+  );
+  console.log(data);
+
+  return await data;
+}
+
+const todos = getTodos();
+
+console.log("this is todos :", todos); // output : promis, YOU SHOULD USE THEN
+
+getTodos().then((data) => console.log("this is todos : ", data));

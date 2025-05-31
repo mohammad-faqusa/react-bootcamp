@@ -1,0 +1,7 @@
+in react-rource repo
+    move to js review 
+    continue coding in starter directory
+    deactivate the previous code using comment 
+
+
+await is used for stopping or pausing the async functions, to run it synchronously 
