@@ -1,0 +1,13 @@
+before single pages apps 
+    we have 1 file html, 1 firle css, 1 file js 
+    traditional serperaiton 
+
+
+if the logic and UI are tightly coupled, why keeping them serperated ? 
+    react component : 
+        data 
+        logic 
+        appearence 
+    
+    instead of 1 technology per fiel , we have 1 component per file 
+
