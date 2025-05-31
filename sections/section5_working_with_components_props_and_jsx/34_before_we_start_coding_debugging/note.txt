@@ -1,0 +1,26 @@
+this is really importatn lectrue, so don't skip it 
+
+
+moving to work sapce, pizza project 
+
+you should run the project using : npm start , 
+    if the changes are not updated after save the code, try to restart the app 
+    on terminal : 
+        ctrl c 
+        npm start 
+
+    
+function App() {
+  return <h1>Hello React!</h1><p>JS</p>;
+} // error , the returned value must be wrapped 
+
+// you shold put your component between enclosing tage like : <div></div> 
+to be like this : 
+
+function App() {
+  return <div><h1>Hello React!</h1><p>JS</p></div> 
+} 
+
+on terminal / output window : 
+    you can check esline, and prettier logs for warning errros 
+
