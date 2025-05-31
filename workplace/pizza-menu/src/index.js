@@ -5,13 +5,34 @@ import pizzaData from "./data";
 function App() {
   return (
     <div>
-      <h1>Hello React!</h1>
-      <p>JS</p>
+      <Header />
+      <Menu />
+      <Footer />
+    </div>
+  );
+}
+
+function Header() {
+  return <h1>Faqusa Pizza Company</h1>;
+}
+
+function Menu() {
+  return (
+    <div>
+      <h2>Our menue</h2>
+      <Pizza />
       <Pizza />
       <Pizza />
       <Pizza />
     </div>
   );
+}
+
+function Footer() {
+  return (
+    <footer>{new Date().toLocaleTimeString()} We're currently open!</footer>
+  );
+  //   return React.createElement("footer", null, "We're currently open!"); // param[0] : element type, param[1]: props, param[2]: child
 }
 
 function Pizza() {

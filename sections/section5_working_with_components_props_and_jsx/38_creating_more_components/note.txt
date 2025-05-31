@@ -1,0 +1,9 @@
+
+
+we need to build UI as displaed in objective application picture : ./theObjectiveApplication.png
+
+first create compoennts of three big parts 
+    header
+    menu
+    footer 
+
