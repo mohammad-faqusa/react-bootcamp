@@ -1,0 +1,13 @@
+implement on pizza project
+
+moving to work sapce, pizza project 
+
+
+delete everythingin src, and start from scratch 
+
+
+strict mode : 
+    wrapping the App into strict mode 
+    strict mode : a component that is part of react, 
+    it is used for addtional check and warining, it does not modify our application 
+    

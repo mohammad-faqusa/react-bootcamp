@@ -1,0 +1,5 @@
+this section we explore threee core concepts :
+    components : are building blocks in react
+    promps : to share data between componets 
+    jsx : declare the component features
+
