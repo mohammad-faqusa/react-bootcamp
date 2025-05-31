@@ -291,7 +291,7 @@ function getTotalReviewCount(book) {
 console.log(getTotalReviewCount(books[1])); // 812
 console.log(getTotalReviewCount(books[2])); // NaN
 
-*/
+
 
 //===================================25. the array map method  ====================================================
 
@@ -442,3 +442,21 @@ const booksAfterUpdate = booksAfterDelete.map((book) =>
 );
 
 console.log(booksAfterUpdate); //
+
+*/
+
+//===================================30. asynchronous JavaScript: Promises  ====================================================
+
+fetch("https://jsonplaceholder.typicode.com/todos/1")
+  .then((response) => response.json())
+  .then((json) => console.log(json));
+
+console.log("mohammad"); //
+
+// output :
+// 'mohammad' ====> 'run before the fetch request'
+
+// { userId: 1,
+// id: 1,
+// title: 'delectus aut autem',
+// completed: false }

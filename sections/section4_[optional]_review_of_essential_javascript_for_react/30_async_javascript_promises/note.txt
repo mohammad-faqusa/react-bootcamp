@@ -1,0 +1,8 @@
+in react-rource repo
+    move to js review 
+    continue coding in starter directory
+    deactivate the previous code using comment 
+
+
+how to fetch data from external web api 
+
